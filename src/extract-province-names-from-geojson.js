@@ -7,7 +7,7 @@ var json2csv = require('json2csv');
 var inputDir = __dirname + '/input';
 var outputDir = __dirname + '/output';
 
-var mapData = require(inputDir + '/vietnam.json');
+var mapData = require(inputDir + '/hongkong.json');
 
 var provinces = mapData['features'].map(function(d) {
 	return {

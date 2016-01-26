@@ -45,13 +45,13 @@ text{
 
 <!-- raw -->
 <div class="svg-container">
-  <b>Vietnam Geographic Map</b>
+  <b>HongKong Geographic Map</b>
   <br>
   <svg id="step0"></svg>
 </div>
 <!-- collision -->
 <div class="svg-container">
-  <b>Vietnam Grid Map</b><br>
+  <b>HongKong Grid Map</b><br>
   <svg id="step1"></svg>
 </div>
 
@@ -65,7 +65,7 @@ var options = {
   offsetX: -72,
   offsetY: -24,
   mapScale: 1700,
-  mapRotate: [-105.12, -16] // Customize the projection to center the map on Vietnam
+  mapRotate: [-105.12, -16] // Customize the projection to center the map on HongKong
 };
 
 var width = 352;
@@ -135,8 +135,8 @@ var svgs = d3.range(0,2).map(function(step){
 });
 
 queue()
-  .defer(d3.json, 'data/vietnam.json')
-  .defer(d3.json, 'data/gridmap-layout-vietnam.json')
+  .defer(d3.json, 'data/hongkong.json')
+  .defer(d3.json, 'data/gridmap-layout-hongkong.json')
   .await(function(error, country, gridmap){
     var features = country.features;
 

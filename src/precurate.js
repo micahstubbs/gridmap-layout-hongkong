@@ -15,10 +15,10 @@ var options = {
   offsetX: -72,
   offsetY: -24,
   mapScale: 1152,
-  mapRotate: [-105.12, -16.56] // Customize the projection to center the map on Vietnam
+  mapRotate: [-105.12, -16.56] // Customize the projection to center the map on HongKong
 };
 
-var mapData = require(inputDir + '/vietnam.json');
+var mapData = require(inputDir + '/hongkong.json');
 var provinces = util.readCsv(inputDir + '/provinces.csv');
 var provinceLookup = _.indexBy(provinces, function(d){return d.enName;});
 //console.log('provinceLookup', provinceLookup);

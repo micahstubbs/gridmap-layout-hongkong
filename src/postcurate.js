@@ -5,7 +5,7 @@ var mu = require('mu2');
 
 var inputDir = __dirname + '/input';
 var outputDir = __dirname + '/output';
-var countryName = 'vietnam';
+var countryName = 'hongkong';
 
 var provinces = util.readCsv(inputDir + '/provinces.csv');
 var provinceLookup = _.indexBy(provinces, function(d){return d.enAbbr;});
